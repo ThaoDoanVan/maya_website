@@ -1,0 +1,22 @@
+.header {
+    background: #06402b;
+}
+
+.header .logo a,
+.header .menu a,
+.header .nav-sep {
+    color: #f2f7f4;
+}
+
+.header .menu a:hover,
+.header .logo a:hover {
+    color: #fff;
+}
+
+.header .menu .active {
+    text-decoration-color: #9fd8bd;
+}
+
+.header #theme-toggle svg {
+    color: #f2f7f4;
+}

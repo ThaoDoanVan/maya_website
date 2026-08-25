@@ -1,0 +1,119 @@
+baseURL: "https://thaodoanvan.github.io/maya_website/"
+title: "MAYA: A Short Shuffle Argument With Fast Verification"
+theme: "PaperMod"
+
+languageCode: "en-us"
+enableRobotsTXT: true
+enableEmoji: true
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      pageRef: /
+      weight: 10
+    - identifier: paper
+      name: Paper
+      pageRef: /paper/
+      weight: 20
+    - identifier: specification
+      name: Specification
+      pageRef: /specification/
+      weight: 30
+    - identifier: mayask
+      name: MAYAsk
+      pageRef: /mayask/
+      weight: 35
+    - identifier: getting-started
+      name: Getting Started
+      pageRef: /getting-started/
+      weight: 40
+    - identifier: code
+      name: Code
+      pageRef: /code/
+      weight: 70
+    - identifier: team
+      name: Team
+      pageRef: /team/
+      weight: 80
+    - identifier: faq
+      name: FAQ
+      pageRef: /faq/
+      weight: 90
+
+params:
+  description: "O(log n) shuffle argument for verifiable elections. Proof size from 304 MB to 6.6 KB."
+  author: "Thi Van Thao Doan, Olivier Pereira, Thomas Peters"
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowBreadCrumbs: true
+  hideAuthor: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: true
+  hideFooter: false
+
+  # Dark/light mode toggle
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # PaperMod built-in search
+  fuseOpacity: 1
+
+  label:
+    text: "MAYA"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ThaoDoanVan/maya_website"
+
+  assets:
+    disableHLJS: true
+    disableFingerprinting: false
+
+  # Enable math rendering (KaTeX)
+  math: true
+
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "index"
+    isPlainText: true
+    notAlternative: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+taxonomies:
+  category: categories
+  tag: tags

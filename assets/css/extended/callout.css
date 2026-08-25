@@ -1,0 +1,86 @@
+.callout {
+    margin: var(--content-gap) 0;
+    border: 1px solid #2f8f6b;
+    border-radius: 4px;
+    background: #f1f8f4;
+    color: var(--content);
+    font-size: 0.82em;
+    line-height: 1.65;
+    overflow: hidden;
+}
+
+.callout-title {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.55rem 0.9rem;
+    background: #d8ece1;
+    border-bottom: 1px solid #a8d4be;
+    font-weight: 700;
+    color: #06402b;
+}
+
+.callout-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    background: #2f8f6b;
+    color: #fff;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.callout-body {
+    padding: 0.9rem;
+}
+
+.callout-body> :last-child {
+    margin-bottom: 0;
+}
+
+.callout-body ul {
+    margin-bottom: 0;
+    padding-inline-start: 1.1rem;
+}
+
+.callout-body li {
+    margin-bottom: 0.45rem;
+}
+
+.callout-body li:last-child {
+    margin-bottom: 0;
+}
+
+.callout a {
+    font-weight: 600;
+    color: #14509b;
+    box-shadow: none;
+}
+
+.callout a:hover {
+    text-decoration: underline;
+}
+
+[data-theme="dark"] .callout {
+    border-color: #2f8f6b;
+    background: #12241c;
+}
+
+[data-theme="dark"] .callout-title {
+    background: #17362a;
+    border-bottom-color: #2f8f6b;
+    color: var(--primary);
+}
+
+[data-theme="dark"] .callout-icon {
+    background: #2f8f6b;
+}
+
+[data-theme="dark"] .callout a {
+    color: #7fb2ff;
+}
