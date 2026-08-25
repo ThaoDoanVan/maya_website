@@ -6,6 +6,8 @@ weight: 5
 MAYA is implemented in Rust with two curve instantiations. The source code
 accompanies the research paper.
 
+The current artifact reproduces the performance measurements reported in the paper. A public API for allowing users to shuffle their own ciphertexts is still under development. Once available, this page will be updated with the corresponding usage instructions and commands.
+
 ## Repositories
 
 | Repository | Curve | Library |
