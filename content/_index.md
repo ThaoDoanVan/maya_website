@@ -32,13 +32,13 @@ New to MAYA?
 <tr><th>n</th><th class="mode">Mode</th><th class="num">Prover (s)</th><th class="num">Verifier (s)</th><th class="num">Proof size</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="2">1,000</td><td class="mode">ST</td><td class="num">0.19</td><td class="num">0.05</td><td class="num" rowspan="2">3,872 B</td></tr>
-<tr><td class="mode">MT</td><td class="num">0.09</td><td class="num">0.03</td></tr>
-<tr class="alt"><td rowspan="2">10,000</td><td class="mode">ST</td><td class="num">1.84</td><td class="num">0.45</td><td class="num" rowspan="2">5,024 B</td></tr>
-<tr class="alt"><td class="mode">MT</td><td class="num">0.72</td><td class="num">0.15</td></tr>
-<tr><td rowspan="2">100,000</td><td class="mode">ST</td><td class="num">19.07</td><td class="num">4.72</td><td class="num" rowspan="2">6,176 B</td></tr>
-<tr><td class="mode">MT</td><td class="num">7.26</td><td class="num">1.40</td></tr>
-<tr class="alt"><td rowspan="2">1,000,000</td><td class="mode">ST</td><td class="num">193.72</td><td class="num">45.43</td><td class="num" rowspan="2">6,752 B</td></tr>
+<tr><td rowspan="2">1,000</td><td class="mode">ST</td><td class="num">0.24</td><td class="num">0.05</td><td class="num" rowspan="2">3.78 KB</td></tr>
+<tr><td class="mode">MT</td><td class="num">0.10</td><td class="num">0.03</td></tr>
+<tr class="alt"><td rowspan="2">10,000</td><td class="mode">ST</td><td class="num">1.95</td><td class="num">0.45</td><td class="num" rowspan="2">4.91 KB</td></tr>
+<tr class="alt"><td class="mode">MT</td><td class="num">0.72</td><td class="num">0.17</td></tr>
+<tr><td rowspan="2">100,000</td><td class="mode">ST</td><td class="num">19.52</td><td class="num">4.60</td><td class="num" rowspan="2">6.03 KB</td></tr>
+<tr><td class="mode">MT</td><td class="num">6.90</td><td class="num">1.57</td></tr>
+<tr class="alt"><td rowspan="2">1,000,000</td><td class="mode">ST</td><td class="num">193.72</td><td class="num">45.43</td><td class="num" rowspan="2">6.59 KB</td></tr>
 <tr class="alt"><td class="mode">MT</td><td class="num">71.91</td><td class="num">13.81</td></tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ LTS, with `rustc` 1.88.0. MAYA uses the Ristretto255 curve
 These figures improve on the ones reported in the paper. The gains come from
 implementation-level optimizations accumulated in the codebase, not from any
 change at the protocol level. See the [Paper]({{< relref "paper.md" >}}) for the full evaluation,
-including the comparison against Verificatum.
+including the comparison against [Verificatum](https://www.verificatum.org/).
 
 ## Learn more
 
