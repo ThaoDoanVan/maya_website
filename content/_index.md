@@ -71,4 +71,3 @@ including the comparison against [Verificatum](https://www.verificatum.org/).
 - [MAYAsk]({{< relref "mayask.md" >}}) — extensions for blocks, multiple keys, and decryption mixnets
 - [Getting Started]({{< relref "getting-started.md" >}}) — run MAYA yourself
 - [Code]({{< relref "code.md" >}}) — source code and repositories
-<!--- [Changelog]({{</* relref "changelog.md" */>}}) — changes since the initial public release-->
