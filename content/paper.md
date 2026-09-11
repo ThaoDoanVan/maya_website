@@ -51,6 +51,7 @@ time and 9% of the verification time.
 
 The performance figures shown on this website (see the
 [home page]({{< relref "_index.md" >}}#performance)) are better than those
-reported in the CCS '26 paper. The protocol itself is unchanged; the improvements come from implementation optimizations made after the paper was written. See the
+reported in the CCS '26 paper. The protocol itself is unchanged; the improvements come from implementation optimizations made after the paper was written.
+<!--See the
 [Changelog]({{< relref "changelog.md" >}}) for what changed relative to the code
-evaluated in the paper.
+evaluated in the paper.-->
