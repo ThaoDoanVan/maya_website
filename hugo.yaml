@@ -44,6 +44,10 @@ menu:
       name: Code
       pageRef: /code/
       weight: 70
+    - identifier: changelog
+      name: Changelog
+      pageRef: /changelog/
+      weight: 75
     - identifier: team
       name: Team
       pageRef: /team/
