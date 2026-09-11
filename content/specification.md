@@ -17,12 +17,13 @@ language, without access to the MAYA source code or the research paper.
 <tr><th>Version</th><th>Specification</th><th>Date</th></tr>
 </thead>
 <tbody>
-<tr><td>2.0</td><td>{{< download file="spec/maya_verifier_spec_v2.pdf" >}}</td><td>July 2026</td></tr>
+<tr><td>1.0</td><td>{{< download file="spec/maya_verifier_spec_v1.0.pdf" >}}</td><td>September 2026</td></tr>
 </tbody>
 </table>
 </div>
 </figure>
-
+Version 1.0 is the first public release of the specification. Changes in later
+versions will be listed in the [Changelog]({{< relref "changelog.md" >}}).
 The specification defines the exact binary format of all data, the
 deterministic derivation of public parameters, the hash-based Fiat–Shamir
 transcript protocol, and the step-by-step verification algorithm.
