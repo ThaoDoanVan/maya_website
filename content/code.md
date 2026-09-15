@@ -50,8 +50,3 @@ maya_p256/                # Secondary instantiation
   src/                    # Library source
   benches/r1cs.rs         # Benchmark
 ```
-
-## Verificatum Baseline
-
-For comparison benchmarks against Verificatum v3.1.0 (Java 17+), see
-[https://www.verificatum.org/](https://www.verificatum.org/).

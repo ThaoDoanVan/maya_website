@@ -61,8 +61,7 @@ LTS, with `rustc` 1.88.0. MAYA uses the Ristretto255 curve
 
 These figures improve on the ones reported in the paper. The gains come from
 implementation-level optimizations accumulated in the codebase, not from any
-change at the protocol level. See the [Paper]({{< relref "paper.md" >}}) for the full evaluation,
-including the comparison against [Verificatum](https://www.verificatum.org/).
+change at the protocol level. See the [Paper]({{< relref "paper.md" >}}) for the full evaluation. 
 
 ## Learn more
 

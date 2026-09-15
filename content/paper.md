@@ -20,9 +20,7 @@ when homomorphic tallying is not applicable. Deployed mixnets in countries
 like Australia, Estonia, Israel, Norway, Spain, and Switzerland produce
 proofs that scale linearly, reaching gigabytes for millions of ciphertexts.
 MAYA achieves O(log n) communication complexity with a transparent setup
-requiring no trusted parameters. For one million ciphertexts, MAYA produces
-proofs that are 0.002% the size of Verificatum's, with comparable prover
-time and 9% of the verification time.
+requiring no trusted parameters. 
 
 ## Download
 
