@@ -7,10 +7,7 @@ Real-world election systems rarely fit the standard cryptographic model of a
 single list of ciphertexts encrypted under one public key. In practice,
 ciphertexts may need to remain grouped by precinct or municipality, different
 groups may use different encryption keys, and shuffling may be combined with
-partial decryption or secret exponentiation. Such requirements arise, for
-example, in the Swiss Post e-voting system
-([Cortier et al., 2025](https://eprint.iacr.org/2025/1625)) and other recent
-voting constructions.
+partial decryption or secret exponentiation. 
 
 **MAYAsk** — MAYA Swiss-Knife — is the extended construction that accommodates
 these settings while preserving the properties of the base protocol.
