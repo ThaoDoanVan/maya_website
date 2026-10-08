@@ -59,9 +59,12 @@ with a max turbo frequency of 4.4 GHz), 16 GB of RAM, and running Ubuntu 22.04
 LTS, with `rustc` 1.88.0. MAYA uses the Ristretto255 curve
 (`curve25519-dalek`) with folding factor k=4.
 
-These figures improve on the ones reported in the paper. The gains come from
-implementation-level optimizations accumulated in the codebase, not from any
-change at the protocol level. See the [Paper]({{< relref "paper.md" >}}) for the full evaluation. 
+These figures improve on the ones reported in the paper. They were measured with
+the implementation in
+[maya_extensions](https://github.com/uclcrypto/maya_extensions), run as a single
+block, which is the plain shuffle. The protocol is unchanged. See the
+[Changelog]({{< relref "changelog.md" >}}) for how the two versions differ, and
+the [Paper]({{< relref "paper.md" >}}) for the full evaluation.
 
 ## Learn more
 

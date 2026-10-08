@@ -103,7 +103,9 @@ with folding factor k=4, on the hardware described on the
 cryptographic operations, CRS regeneration, and disk I/O.
 
 The source code for all four extensions is at
-[uclcrypto/maya_extensions](https://github.com/uclcrypto/maya_extensions).
+[uclcrypto/maya_extensions](https://github.com/uclcrypto/maya_extensions), which
+is also the current MAYA implementation. See the
+[Changelog]({{< relref "changelog.md" >}}).
 
 Proof sizes remain logarithmic across all variants. At n = 200,000 the measured
 sizes are 6,176 bytes for the single-key variants &Pi;<sub>1</sub> and

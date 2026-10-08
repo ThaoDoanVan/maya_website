@@ -10,12 +10,13 @@ The current artifact reproduces the performance measurements reported in the pap
 
 ## Repositories
 
-| Repository | Curve | Library |
-|-----------|-------|---------|
-| maya_ristretto | Ristretto255 (Curve25519) | curve25519-dalek |
-| maya_p256 | NIST P-256 | arkworks |
+| Repository | Contents |
+|---|---|
+| [maya_shuffle_proof](https://github.com/uclcrypto/maya_shuffle_proof) | The code evaluated in the paper, as `maya_ristretto` (Ristretto255, curve25519-dalek) and `maya_p256` (NIST P-256, arkworks) |
+| [maya_extensions](https://github.com/uclcrypto/maya_extensions) | The current implementation, together with the MAYAsk protocols |
 
-GitHub: [https://github.com/uclcrypto/maya_shuffle_proof](https://github.com/uclcrypto/maya_shuffle_proof)
+See the [Changelog]({{< relref "changelog.md" >}}) for what changed between
+them. The commands below are for `maya_shuffle_proof`.
 
 ## Requirements
 
