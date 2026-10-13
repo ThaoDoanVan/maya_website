@@ -7,7 +7,7 @@ Real-world election systems rarely fit the standard cryptographic model of a
 single list of ciphertexts encrypted under one public key. In practice,
 ciphertexts may need to remain grouped by precinct or municipality, different
 groups may use different encryption keys, and shuffling may be combined with
-partial decryption or secret exponentiation. 
+partial decryption or secret exponentiation.
 
 **MAYAsk** — MAYA Swiss-Knife — is the extended construction that accommodates
 these settings while preserving the properties of the base protocol.
@@ -15,9 +15,12 @@ Specifically, it gives logarithmic-size arguments for block-respecting
 shuffles, shuffles of ciphertexts encrypted under different public keys,
 shuffles combined with partial decryption using a mixer's secret-key share,
 and shuffles combined with secret exponentiation of selected ciphertext
-components. In all cases the resulting arguments retain logarithmic size in
-the number of ciphertexts, require a transparent setup, and have verification
-dominated by a single multi-scalar multiplication.
+components. All the extensions we propose preserve transparent setup (which
+can be simply derived from a hash function modeled as a random oracle for
+instance) and $O(\log n)$ proof size, up to a few group elements and scalars per
+additional key or secret exponent.
+
+
 
 ## Extensions
 
@@ -37,11 +40,11 @@ recent Swiss Post proposals.
 encryption while shuffling, removing the need for a separate decryption phase.
 Threshold key sharing is fully supported.
 
-All four preserve MAYA's $O(\log n)$ proof size. Adding block structures or
+ Adding block structures or
 multiple keys incurs essentially zero overhead compared to the base protocol;
 the decryption mixnet adds about 7% to multi-threaded prover time, and
-shuffle-and-exponentiate carries a moderate overhead from its extra
-exponentiation and doubled ciphertext count.
+shuffle-and-exponentiate carries a moderate overhead from its unavoidable extra
+exponentiations and doubled ciphertext count.
 
 > The paper is not yet publicly available. It will be linked here once it is.
 
@@ -108,5 +111,8 @@ Proof sizes remain logarithmic across all variants. At n = 200,000 the measured
 sizes are 6,176 bytes for the single-key variants &Pi;<sub>1</sub> and
 &Pi;<sub>2</sub>; 6,272 bytes for two keys, growing by 96 bytes per additional
 key up to 15,680 bytes for 100 keys (&Pi;<sub>3</sub>); 6,224 bytes for
-&Pi;<sub>4</sub>; and 6,320 bytes for &Pi;<sub>5</sub>. At n = 2,000,000 the
+&Pi;<sub>4</sub>, which embeds a single extra group
+element and scalar. With one exponent per voter, &Pi;<sub>5</sub> adds one group element
+and one scalar per voter: 326,272 and 646,272 bytes for 5k × 20 and 10k × 20.
+ At n = 2,000,000 the
 &Pi;<sub>1</sub> proof is 7,328 bytes.
