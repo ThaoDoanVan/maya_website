@@ -16,7 +16,7 @@ is in the standard library of every mainstream language, so a verifier can be
 written in any of them without reproducing a Rust-specific transcript
 construction.
 
-**Extensions.** This repository also contains the five
+**Extensions.** This repository also contains all the
 [MAYAsk]({{< relref "mayask.md" >}}) protocols. Plain MAYA is
 &Pi;<sub>1</sub> with a single block.
 
@@ -47,4 +47,4 @@ measurements reported there. Ristretto255 and P-256.
 ## Which version to use
 
 - Reproducing the paper's tables: version 1.
-- Blocks, multiple keys, or decryption mixnets: version 2.
+- Blocks, multiple keys, decryption mixnets, and shuffle-and-exponentiate: version 2.

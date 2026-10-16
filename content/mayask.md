@@ -102,7 +102,7 @@ with folding factor k=4, on the hardware described on the
 [home page]({{< relref "_index.md" >}}#performance). Timings include all
 cryptographic operations, CRS regeneration, and disk I/O.
 
-The source code for all four extensions is at
+The source code for extensions is at
 [uclcrypto/maya_extensions](https://github.com/uclcrypto/maya_extensions), which
 is also the current MAYA implementation. See the
 [Changelog]({{< relref "changelog.md" >}}).

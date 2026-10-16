@@ -18,7 +18,7 @@ New to MAYA?
 <ul>
 <li>If you are a developer, head over to the <a href="{{< relref "specification.md" >}}">Verifier Specification</a> and <a href="{{< relref "getting-started.md" >}}">Getting Started</a>.</li>
 <li>If you are interested in the research behind MAYA, read more about it here: <a href="https://eprint.iacr.org/2026/941.pdf">MAYA: A Short Shuffle Argument With Fast Verification</a> — <a href="https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html">CCS&nbsp;'26</a>, to appear.</li>
-<li>If you want to see how MAYA handles the structures real elections actually have — blocks, multiple keys, decryption mixnets — read about <a href="{{< relref "mayask.md" >}}">MAYAsk</a>.</li>
+<li>If you want to see how MAYA handles the structures real elections actually have -- blocks, multiple keys, decryption mixnets, shuffle-and-exponentiate -- read about <a href="{{< relref "mayask.md" >}}">MAYAsk</a>.</li>
 </ul>
 </div>
 </aside>
@@ -68,8 +68,8 @@ the [Paper]({{< relref "paper.md" >}}) for the full evaluation.
 
 ## Learn more
 
-- [Paper]({{< relref "paper.md" >}}) — the full research paper describing MAYA
+- [Paper]({{< relref "paper.md" >}}) -- the full research paper describing MAYA
 - [Specification]({{< relref "specification.md" >}}) — the verifier specification
-- [MAYAsk]({{< relref "mayask.md" >}}) — extensions for blocks, multiple keys, and decryption mixnets
+- [MAYAsk]({{< relref "mayask.md" >}}) -- extensions for blocks, multiple keys, decryption mixnets, and  shuffle-and-exponentiate
 - [Getting Started]({{< relref "getting-started.md" >}}) — run MAYA yourself
-- [Code]({{< relref "code.md" >}}) — source code and repositories
+- [Code]({{< relref "code.md" >}}) -- source code and repositories
